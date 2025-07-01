@@ -1,0 +1,216 @@
+    /* @import './libs/bootstrap-reboot.min'; */
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+    @import url('./blocks/promo.css');
+    @import url('./blocks/sidepanel.css');
+    @import url('./blocks/menu.css');
+    @import url('./blocks/about.css');
+    @import url('./blocks/resume.css');
+    @import url('./blocks/promo.css');
+    @import url('./blocks/skills.css');
+    @import url('./blocks/portfolio.css');
+    @import url('./blocks/price.css');
+    @import url('./blocks/contcts.css');
+    @import url('./blocks/media.css');
+    body {
+        color: #4D4D4D;
+    }
+    
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    
+    .container {
+        width: 1180px;
+        margin: 0 auto;
+    }
+    
+    .divider {
+        width: 60px;
+        height: 3px;
+        background-color: #FFA501;
+        margin: 25px auto 0 auto;
+    }
+    
+    .title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 60px;
+    }
+    
+    .title_fz14 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .title_fz16 {
+        /* padding-left: 10px; */
+        font-size: 26px;
+        line-height: 24px;
+        color: #000;
+    }
+    
+    .title_fz20 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .title_fz24 {
+        font-size: 24px;
+        line-height: 24px;
+        color: #000;
+    }
+    
+    .title_fz26 {
+        /* padding-left: 10px; */
+        font-size: 26px;
+        line-height: 24px;
+        color: #000;
+    }
+    
+    .title_fz36 {
+        font-size: 36px;
+    }
+    
+    .title_fz48 {
+        font-size: 48px;
+        color: #000;
+    }
+    
+    .title__section-title {
+        position: relative;
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .title__section-title:before {
+        content: '';
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: #FFA501;
+        z-index: -1;
+        top: -25%;
+        left: 0;
+    }
+    
+    .title__section-title:before {
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .title__section-subtitle {
+        text-align: center;
+    }
+    
+    .btn {
+        margin-right: 10px;
+        height: 45px;
+        background: #FFA501;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        padding: 11px 25px 12px 25px;
+        border: none;
+        font-weight: bold;
+    }
+    
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .policy {
+        margin: 20px;
+        padding: 0 15px 0 15px;
+        text-align: start;
+    }
+    
+    h4,
+    h5 {
+        text-align: center;
+        margin: 16px;
+    }
+    
+    .policy__points {
+        margin: 16px;
+        text-align: start;
+    }
+    
+    .pageup {
+        display: block;
+        position: fixed;
+        bottom: 100px;
+        right: 35px;
+        width: 40px;
+        height: 40px;
+        scroll-behavior: smooth;
+    }
+    
+    @media(max-width: 1200px) {
+        .container {
+            max-width: 960px;
+        }
+        .title_fz36 {
+            font-size: 30px;
+        }
+    }
+    
+    @media(max-width: 992px) {
+        .container {
+            max-width: 720px;
+        }
+        .titlefz36 {
+            font-size: 30px;
+            line-height: 42px;
+            margin-top: 26px;
+        }
+        .title_fz48 {
+            font-size: 28px;
+        }
+        .title_fz20 {
+            font-size: 30px;
+        }
+        .divider {
+            margin: 15px auto auto;
+        }
+    }
+    
+    @media(max-width: 768px) {
+        /* .container {
+            max-width: 540px;
+        } */
+        .title__section-title {
+            position: relative;
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+    
+    @media(max-width: 576px) {
+        .container {
+            width: 100%;
+            padding: 0 10px 0 10px;
+        }
+        .title_fz48 {
+            font-size: 24px;
+        }
+        .title_fz36 {
+            font-size: 24px;
+        }
+        .title_fz16 {
+            font-size: 18px;
+            margin-left: 10px;
+            padding-left: 0px;
+        }
+        .pageup {
+            bottom: 95px;
+            width: 25px;
+            height: 25px;
+        }
+    }
